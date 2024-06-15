@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://miro.medium.com/v2/resize:fit:1338/0*3oJdSb7B26rt3xjJ" width="full">
+    <h2>Press F12 and Enjoy the Game</h2>
+</body>
+<script>
+
+
+    console.log("Hello!");
+
+    function computerChoice(){
+        const array = ["Rock","Paper","Scissor"];
+        return array[Math.floor(Math.random() * 3)];
+    };
+ 
+
+    function humanChoice(){
+        let value = prompt("Your turn.");
+        return value;
+    };
+    let humanScore = 0;
+    let computerScore = 0;
+     
+
+    function playGround(num){
+    
+    for(let i =0;i<num;i++){
+    let human = humanChoice();
+    let computer = computerChoice();
+    let j = i+1;
+    console.log("Round" + j);
+    function playRound(computer,human){
+        if(computer == human){
+            console.log(human+"\t VS \t" +computer);
+            console.log("That was a draw");
+        } else if(computer == "Rock" && (human == "Paper" || human == "Scissor")){
+            computerScore = computerScore + 1;
+            console.log(human+"\t VS \t" +computer);
+            console.log("Computer scored");
+        } else if(human == "Rock" && (computer =="Paper" || computer == "Scissor")){
+            humanScore = humanScore +1;
+            console.log(human+"\t VS \t" +computer);
+            console.log("You scored")
+        } else if(computer == "Scissor" && human == "Paper"){
+            computerScore = computerScore +1;
+            console.log(human+"\t VS \t" +computer);
+            console.log("Computer scored")
+        } else if(human =="Scissor" && computer =="Paper"){
+            console.log(human+"\t VS \t" +computer);
+            humanScore = humanScore +1;
+            console.log("You scored")
+        } else{
+            console.log("Oops! Something wrong")
+        }
+    };
+
+    playRound(computer,human);
+    }
+    console.log("\n \n Score time \n \n");
+    console.log("   You \t Computer");
+    console.log("\t" + humanScore + "\t\t" + computerScore);
+}
+    playGround(5);
+</script>
+</html>

@@ -28,3 +28,7 @@ h4{
 button:hover{
     background-color: black;
 }
+
+a :hover{
+    cursor: pointer;
+}
