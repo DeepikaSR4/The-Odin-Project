@@ -19,6 +19,8 @@ This repository contains projects that I developed as part of my learning journe
 - **Project 2**: Landing Page
 For this project, I designed and developed a landing page using HTML and CSS. The goal was to create an engaging and visually appealing webpage that resembles the given image [similar to this](https://cdn.statically.io/gh/TheOdinProject/curriculum/81a5d553f4073e593d23a6ab00d50eef8620796d/foundations/html_css/project/imgs/01.png). I learned how to craft an attractive and functional landing page that captures the attention of visitors and encourages further exploration.
 
+- **Project 3**: Rock Paper Scissors
+In this project, I created a Rock Paper Scissors game using JavaScript. This project helped me practice JavaScript functions, control flow, and DOM manipulation while building a fun, interactive game.
 
  <!--  ### Full Stack JavaScript Path
 - **Project 1**: Description of Project 1.
